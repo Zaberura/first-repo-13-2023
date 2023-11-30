@@ -1,10 +1,13 @@
 from datetime import date
+
 class Medicine:    def __init__(self, name, price, quantity, is_prescription_needed, expiration_date):
         self.name = name        self.price = price
         self.quantity = quantity        self.is_prescription_needed = is_prescription_needed
         self.expiration_date = expiration_date
+        
     def display_info(self):        print(f"Medicine: {self.name}, Price: {self.price}, Quantity: {self.quantity}, Prescription: {self.is_prescription_needed}, Expiration Date: {self.expiration_date}")
 class Pharmacy:
+        
     def __init__(self):        self.medicines = []
     def add_medicine(self, medicine):
         self.medicines.append(medicine)
